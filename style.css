@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#home{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(36, 54, 47);
+}
+
+#controller{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#circle{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1593940256067-fb4acd831804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Hello Paris Sans ExtraLight";
+    font-weight: 100;
+    line-height: 8vw;
+    color: rgb(255, 209, 196);
+    font-size: 12vw;
+}
+
+#text h1 span{
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    padding: 1vw 12vw;
+}
+
+.navpart a{
+    display: inline-block;
+}
+
+#nleft a{
+    font-family: "Bigilla";
+    margin-right: 20px;
+    color: rgb(252, 140, 100);
+}
+
+
+#nright a{
+    color: rgb(252, 140, 100);
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Bigilla";
+}
+
+#ncenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ncenter h2{
+    font-family: "Bigilla";
+    font-weight: 900;
+    color: rgb(252, 140, 100);
+    font-size: 2.5vw;
+}
+
+#hbottom{
+    width: 40%;
+    height: 16%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hbtmpart{
+    text-align: center;
+}
+
+.hbtmpart h4{
+    font-family: "Bigilla";
+    font-size: 3vw;
+    line-height: 1vw;
+    color: orangered;
+}
+
+.hbtmpart h2{
+    font-family: "Bigilla";
+    text-decoration: underline;
+    color: rgb(252, 140, 100);
+    font-size: 1vw;
+}
+
+#circleline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    border: 1px solid rgb(82, 82, 82);
+}
+
+#rightsmcircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    border: 1px solid red;
+    color:rgb(254, 173, 150);
+    font-family: "Bigilla";
+    font-weight: 900;
+}
+
+
+#second{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(20, 31, 27);
+}
+
+#photoseries{
+    display: flex;
+    width: 100%;
+    overflow: auto ;
+    gap: 50px;
+}
+
+#photoseries .photo{
+    width: 25vw;
+    height: 37vw;
+    flex-shrink: 0;
+    background-color: rebeccapurple;
+}
+
+#pic1 {
+    background-image: url(https://images.unsplash.com/photo-1618721405821-80ebc4b63d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+}
+
+#pic2 {
+    background-image: url(https://images.unsplash.com/photo-1613366211183-a729adcfc224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+}
+
+#pic3 {
+    background-image:url(https://images.unsplash.com/photo-1632149877166-f75d49000351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    border-image:fill ;
+}
+
+#pic4 {
+    background-image: url( https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+#pic5 {
+    background-image:url(https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZWwlMjBnaXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=6); 
+    
+}
+
+
+#photoseries::-webkit-scrollbar{
+    display: none;
+}
+
+#second h1{
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+    font-size: 4vw;
+    font-family: "Bigilla";
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+#third{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+.stripe{
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    width: 4%;
+    height: 100%;
+    background-color: rgb(223, 90, 90);
+}
+
+.strcnt{
+    pointer-events: none;
+    opacity: 0;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Gilroy";
+    transform: translate(-50%, -50%);
+}
+
+.strcnt h1{
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.strcnt p{
+    font-weight: 600;
+    font-size: 1.2vw;
+    width: 70%;
+    margin-top: 2vw;
+}
+
+
+.stripe:nth-child(2){
+    right: 12%;
+    width: 4%;
+    background-color: rgb(86, 145, 213);
+}
+
+.stripe:nth-child(3){
+    right: 8%;
+    background-color: rgb(226, 149, 71);
+}
+
+.stripe:nth-child(4){
+    right: 4%;
+    background-color: rgb(155, 103, 228);
+}
+
+.cors{
+    opacity: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.stripe h4{
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10%;
+    font-size: 1vw;
+    left: 30px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+}
+
+#thleft{
+    position: absolute;
+    padding: 4vw;
+    width: 84%;
+    left: 0;
+    height: 100%;
+    background-color: rgb(209, 209, 209);
+}
+
+#thleft h1{
+    font-size: 5vw;
+}
+
+#thleft :is(h1, p){
+    font-family: "Helvetica";
+    font-weight: 500;
+}
+
+#thleft p{
+    width: 37vw;
+    margin-top: 2vw;
+}
+
+
+#fourth{
+    position: relative;
+    width: 100%;
+    background-color: rgb(20, 31, 27);
+}
+
+
+#elems{
+    padding: 5vw 5vw;
+}
+
+.elem{
+    position: relative;
+    margin-bottom: 2vw;
+    /* background-color: red; */
+}
+
+.elem img{
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    height: 40vh;
+}
+
+.elem h1{
+    pointer-events: none;
+    width: fit-content;
+    font-family: "Bigilla";
+    color: #fff;
+    font-weight: 900;
+    font-size: 5vw;
+    position: relative;
+    z-index: 99999999999999;
+}
+
+.elem h1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
